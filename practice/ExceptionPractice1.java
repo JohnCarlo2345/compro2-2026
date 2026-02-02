@@ -27,6 +27,6 @@ public static int inputNumber() {
 
     while(true) {
         try {
-            number = sc.nextInt
+            number = sc.nextInt();
     }
 }
