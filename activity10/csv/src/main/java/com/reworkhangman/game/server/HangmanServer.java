@@ -112,6 +112,7 @@ public class HangmanServer {
 
     public static void main(String[] args) {
         new HangmanServer().start();
+        
     }
 }
 
