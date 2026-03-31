@@ -1,7 +1,11 @@
 package com.RPSGame.model;
 
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class RPSGameClient {
@@ -10,10 +14,10 @@ public class RPSGameClient {
         Scanner userInput = new Scanner(System.in);
         System.out.print("Enter server IP address (type 'localhost' if playing on same computer): ");
         String serverIP = userInput.nextLine();
-        final int PORT = 1234; // Same port as server, duh
+        final int PORT = 1234;
 
         try {
-            // Connect to the server - was confused at first why it wasn't working till I checked the port
+            // Connect to the server
             Socket clientSocket = new Socket(serverIP, PORT);
             System.out.println("Connected to game server!\n");
 
