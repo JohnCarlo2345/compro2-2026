@@ -11,15 +11,13 @@ public class NestedMenu {
         String[] subjects = {"COMPRO2", "DSA", "OOP"};
         int mainChoice, subChoice;
         final String JSON_FILE = "gradesData.json";
-
         loadGrades(subjectGrades, subjects, JSON_FILE);
 
-        do { 
+        do {
             System.out.println("MAIN MENU:");
             System.out.println("[1] Enter Grades");
             System.out.println("[2] Display Grades");
             System.out.println("[3] Exit");
             System.out.print("Enter choice");
             mainChoice = scanner.nextInt();
-            
         }
